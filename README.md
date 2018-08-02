@@ -1,0 +1,3 @@
+一个小巧的FTP/HTTP文件服务器，纯C实现，支持密码保护、多线程上传下载、虚拟文件夹。
+
+QuickShare File Server is an easy to use FTP and HTTP server helps you sharing files. QuickShare File Server features sharing (send or receive) files with others easily and conveniently, sharing protected by password, sharing files with many people, and sharing files with does not want to install client software. Clients can download and upload files by web browsers (Microsoft IE, Mozilla Firefox, or Opera) or FTP clients which many OS (such as Microsoft windows) has already build-in. It supports virtual folders. Anonymous access and password protection are both supported. It includes beautiful and full customizable http template and support for resuming and multi-thread transfer.

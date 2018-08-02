@@ -1,0 +1,100 @@
+SESSION_TEMPLETE_HEADER_START
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <link rel="stylesheet" href="/qfs.css" type="text/css" />
+        <title>Browse directory TEMPLETE_FIELD1_PATH_TEMPLETE_FIELD2 - TEMPLETE_FIELD1_SERVERNAME_TEMPLETE_FIELD2</title>
+    </head>
+
+    <body>
+        <!-- wrap starts here -->	
+        <div id="wrap">
+            <div id="header">
+                <h1 id="logo-text">Quick<span class="logo-text2">Share</span><span class="logo-text3"> File</span><span class="logo-text4"> Server</span></h1>			
+                <h2 id="slogan">Enjoy the happiness of sharing!</h2>	
+            </div>
+
+            <!--<div class="headerbar">-->
+            <!--</div>-->
+
+            <!-- content-wrap starts here -->
+            <div id="content-wrap">
+            <div id="mainfull">
+                <!--<h3> Directory TEMPLETE_FIELD1_PATH_TEMPLETE_FIELD2 </h3>-->
+                <h3><a href="/">Home</a> | <a href="TEMPLETE_FIELD1_LASTPATH_TEMPLETE_FIELD2">Parent Directory</a></h3>
+
+                <form name=frm action="." target=_parent method=post enctype="multipart/form-data" onSubmit="frm.upbtn.disabled=true; return true;">
+                    <input name="filebtn1" type="file" />
+                    <input name="upbtn" type="submit" value="upload" />
+                </form>
+
+                <table width="97%">
+                    <tr>
+                        <th width="2%"></td>
+                        <th width="60%"><a href="TEMPLETE_FIELD1_PATH_TEMPLETE_FIELD2?sort=name"><strong>Name</strong></a></th>
+                        <th width="15%"><a href="TEMPLETE_FIELD1_PATH_TEMPLETE_FIELD2?sort=size"><strong>Size</strong></a></th>
+                        <th width="23%"><a href="TEMPLETE_FIELD1_PATH_TEMPLETE_FIELD2?sort=date"><strong>Modified</strong></a></th>
+                    </tr>
+SESSION_TEMPLETE_HEADER_END
+
+SESSION_TEMPLETE_FOOTER_START
+                </table>
+            <!-- content-wrap ends here -->
+            </div>
+            </div>
+
+            <div id="footer">
+               <span id="footer-left">
+                   Powered by <a href="http://www.quicksharehq.com">QuickShare File Server</a>
+               </span>		
+               <span id="footer-right">
+                   <a href="/">Home</a> | 
+                   <a href="TEMPLETE_FIELD1_LASTPATH_TEMPLETE_FIELD2">Parent Directory</a>
+               </span>		
+            </div>	
+
+        <!-- wrap ends here -->		
+        </div>	
+    </body>
+</html>
+SESSION_TEMPLETE_FOOTER_END
+
+
+SESSION_TEMPLETE_DIR_START
+<tr>
+    <td align="center"><img src="/folder.gif" width="24" height="24" border="0"></td>
+    <td><a href="TEMPLETE_FIELD1_URL_TEMPLETE_FIELD2">TEMPLETE_FIELD1_NAME_TEMPLETE_FIELD2</a></td>
+    <td>&lt;dir&gt;&nbsp;</td>
+    <td>TEMPLETE_FIELD1_TIME_TEMPLETE_FIELD2</td>
+</tr>
+SESSION_TEMPLETE_DIR_END
+
+
+SESSION_TEMPLETE_FILE_START
+<tr>
+    <td align="center"><img src="/doc.gif" width="24" height="24" border="0"></td>
+    <td ><a href="TEMPLETE_FIELD1_URL_TEMPLETE_FIELD2">TEMPLETE_FIELD1_NAME_TEMPLETE_FIELD2</a></td>
+    <td>TEMPLETE_FIELD1_SIZE_TEMPLETE_FIELD2</td>
+    <td>TEMPLETE_FIELD1_TIME_TEMPLETE_FIELD2</td>
+</tr>
+SESSION_TEMPLETE_FILE_END
+
+
+SESSION_TEMPLETE_UPLOADOK_START
+<html>
+    <head>
+        <meta http-equiv="refresh" content="2;url=TEMPLETE_FIELD1_UPLOADPATH_TEMPLETE_FIELD2">
+    </head>
+    <body>
+        File "TEMPLETE_FIELD1_UPLOADFILE_TEMPLETE_FIELD2" has upload to "TEMPLETE_FIELD1_UPLOADPATH_TEMPLETE_FIELD2"!
+    </body>
+<html>
+SESSION_TEMPLETE_UPLOADOK_END
+
+
+SESSION_TEMPLETE_UPLOADFAILED_START
+File "TEMPLETE_FIELD1_UPLOADFILE_TEMPLETE_FIELD2" upload to "TEMPLETE_FIELD1_UPLOADPATH_TEMPLETE_FIELD2" FAILED!
+Reasion: TEMPLETE_FIELD1_UPLOADRESULTMSG_TEMPLETE_FIELD2
+SESSION_TEMPLETE_UPLOADFAILED_END
